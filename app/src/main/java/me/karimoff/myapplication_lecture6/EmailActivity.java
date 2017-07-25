@@ -50,9 +50,8 @@ public class EmailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
-                emailIntent.setType("text/html");
+                emailIntent.setType("text/plain");
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, from);
-                emailIntent.setData(Uri.parse(to));
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
                 emailIntent.putExtra(Intent.EXTRA_TEXT, message);
 

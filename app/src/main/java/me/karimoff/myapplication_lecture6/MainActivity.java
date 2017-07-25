@@ -59,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (productsListView.getCheckedItemCount() != 0){
                     SparseBooleanArray checkedProducts = productsListView.getCheckedItemPositions();
-                    String message = "I would like to buy ";
+                    String message = "I would like to buy \n";
 
                     for (int i = 0; i < checkedProducts.size(); i++) {
-                        message += stringArrayList[checkedProducts.keyAt(i)];
+                        message += stringArrayList[checkedProducts.keyAt(i)] + " ";
                     }
                     sendData(user, to, getString(R.string.subject, user), message);
                 } else {
