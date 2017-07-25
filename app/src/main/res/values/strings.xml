@@ -1,0 +1,17 @@
+<resources>
+    <string name="login_label">Login or Sign Up</string>
+    <string name="app_name">My App</string>
+    <string name="you_are_login_as">You are login as: %s</string>
+    <string name="subject">The purchase list: %s</string>
+    <string name="available_products">Available products:</string>
+    <string name="buy">Buy</string>
+    <string name="send_to">Send...</string>
+    <string-array name="products">
+        <item>Apple</item>
+        <item>Banana</item>
+        <item>Lemon</item>
+        <item>Orange</item>
+        <item>Rice</item>
+        <item>Tuna</item>
+    </string-array>
+</resources>
